@@ -2,7 +2,6 @@ package statusbar
 
 import (
 	"fmt"
-	"strings"
 	"time"
 
 	"github.com/12yanogden/colors"
@@ -36,17 +35,21 @@ func (bar *StatusBar) Start(msg string) {
 		"[]",
 	}
 
-	bar.isWaving = true
+	// Build the struct
 	bar.Msg = msg
+	bar.isWaving = true
 	bar.Wave = &wave
 	bar.Reveal = &reveal
 
+	// Initialize the animations
 	wave.Init(&bar.isWaving)
 	reveal.Init(revealFrames, 10)
 
+	// Play the wave animation
 	go playWave(bar)
 }
 
+// Play the wave animation
 func playWave(bar *StatusBar) {
 	for bar.isWaving {
 		fmt.Printf("\r[%s] %s", bar.Wave.Play(), bar.Msg)
@@ -54,14 +57,17 @@ func playWave(bar *StatusBar) {
 	}
 }
 
+// Print a PASSED status
 func (bar *StatusBar) Pass() {
 	revealStatus(bar, "PASSED", "GREEN")
 }
 
+// Print a FAILED status
 func (bar *StatusBar) Fail() {
 	revealStatus(bar, "FAILED", "RED")
 }
 
+// Print the status given
 func revealStatus(bar *StatusBar, status string, colorKey string) {
 	bar.isWaving = false
 
@@ -77,10 +83,12 @@ func revealStatus(bar *StatusBar, status string, colorKey string) {
 	fmt.Println()
 }
 
+// Return true if the last frame has the status given. Else, false.
 func hasStatusFrames(bar *StatusBar, status string) bool {
-	return strings.Contains(bar.Reveal.Frames[len(bar.Reveal.Frames)-1], status)
+	return bar.Reveal.Frames[len(bar.Reveal.Frames)-1] == "[ "+status+" ]"
 }
 
+// Build the frames for the reveal with the status and color given
 func calcStatusFrames(status string, colorKey string) []string {
 	status = str.Center(status, len(status)+2)
 	frames := []string{}
