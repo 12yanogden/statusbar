@@ -1,13 +1,7 @@
-github.com/12yanogden/cli v0.0.0-20240108030343-b5486cac658b h1:I25a0CdgE+oV671vTL48Ji8sukkE3UuvZOynfEmakiA=
-github.com/12yanogden/cli v0.0.0-20240108030343-b5486cac658b/go.mod h1:tnBgA88188YqkG03AwQPVPgedR1JunlU3GSJWigGLU8=
 github.com/12yanogden/colors v0.0.0-20240118221519-8b215407d58d h1:kd1Vbn2fpoQzIzpTv4XGdgcYGgE+z9UxnKLKHPxthSE=
 github.com/12yanogden/colors v0.0.0-20240118221519-8b215407d58d/go.mod h1:gKDOm4dViMDob0E4nVNBALM2/RLPSVd9RfpfD+f3kjE=
-github.com/12yanogden/errors v0.0.0-20231228214306-8b23b695188b h1:Aez54untSAhW3KDg59yEzkeYpLey76jJKGb6B9Rsb1c=
-github.com/12yanogden/errors v0.0.0-20231228214306-8b23b695188b/go.mod h1:TjLkJ8S1sJ/YmUsPhKzsIIX0oAgT/xxkxwMOMtgeaBg=
 github.com/12yanogden/intslices v0.0.0-20240101183035-5fced076a142 h1:EGrD7BnCbABuuEyOAJ5fKXMLEaSW9eXDJH/obynI1vo=
 github.com/12yanogden/intslices v0.0.0-20240101183035-5fced076a142/go.mod h1:QwFE7MGn0dB6lb/r/ANVvhNUHSQO5Y2uPUDVKIMmQZg=
-github.com/12yanogden/maps v0.0.0-20231231151019-cf42bdb15e10 h1:nNkdA1b7T++cvNZTCYSib3GWHqbvxufcZU82a+/mrJg=
-github.com/12yanogden/maps v0.0.0-20231231151019-cf42bdb15e10/go.mod h1:QGNtRv7a/qhHZFUx4JgZpw6Tywf601bgwbSlPouzxoI=
 github.com/12yanogden/reel v0.0.0-20240118225501-da7284459e7d h1:N4dwYF65ULUYls4pNtA4Wyl7ht6Nqn19kayzYlNklgQ=
 github.com/12yanogden/reel v0.0.0-20240118225501-da7284459e7d/go.mod h1:mm5eeKuUYpAm81JrgOXJJLN9FJ3TPQ0IkvkW/zdaA4Y=
 github.com/12yanogden/slices v0.0.0-20240118220809-517c75f85e9b h1:h3vWngbBOVP45tj7y95z6kfveuZSG1mtFiwz7mpSh74=
@@ -16,8 +10,8 @@ github.com/12yanogden/spinners v0.0.0-20240119135110-dc75cc3cb704 h1:NqpA1mj7gcf
 github.com/12yanogden/spinners v0.0.0-20240119135110-dc75cc3cb704/go.mod h1:Tr8oh79BkLH1snINT0jYKS2cuYV+riHdovD7uFJT744=
 github.com/12yanogden/str v0.0.0-20240107171210-9eee80c43f5a h1:mCcPlN6jLf5TBMm8Etb8gtmAon6Igs7wMAuTwJ5Rq/I=
 github.com/12yanogden/str v0.0.0-20240107171210-9eee80c43f5a/go.mod h1:0pVQTrVf1oySdEszgDPyMktYVFyf4VDYtuBlDgevyw4=
-github.com/12yanogden/strslices v0.0.0-20240101195431-31ea262b21c8 h1:7BeDzPKEAOEypDdHYiqH6t5v9x/QU5+/iqh9PDsKLUE=
-github.com/12yanogden/strslices v0.0.0-20240101195431-31ea262b21c8/go.mod h1:jZUaQR0gb2lRCInwPzjvVzOJx9xZdy/ri8Lbvo8utXk=
+github.com/12yanogden/strslices v0.0.0-20240119012840-ffc0a17fcd27 h1:PuR0KRN4M35+NLdnMEYOGMypQfSch5Wokjs8bbRuHCA=
+github.com/12yanogden/strslices v0.0.0-20240119012840-ffc0a17fcd27/go.mod h1:XgV7jQfAwfdQEeDTFLai5JrdpokUpWX7xwJgIeym72M=
 golang.org/x/sys v0.16.0 h1:xWw16ngr6ZMtmxDyKyIgsE93KNKz5HKmMa3b8ALHidU=
 golang.org/x/sys v0.16.0/go.mod h1:/VUhepiaJMQUp4+oa/7Zr1D23ma6VTLIYjOOTFZPUcA=
 golang.org/x/term v0.16.0 h1:m+B6fahuftsE9qjo0VWp2FW0mB3MTJvR0BaMQrq0pmE=
