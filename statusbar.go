@@ -77,7 +77,7 @@ func revealStatus(bar *StatusBar, status string, colorKey string) {
 
 	for range slices.Indexes(bar.Reveal.Frames) {
 		fmt.Printf("\r%s %s", bar.Reveal.Play(), bar.Msg)
-		time.Sleep(50 * time.Millisecond)
+		time.Sleep(30 * time.Millisecond)
 	}
 
 	fmt.Println()
