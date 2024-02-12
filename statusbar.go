@@ -34,16 +34,16 @@ func spin(bar *StatusBar) {
 
 // Print a PASSED status
 func (bar *StatusBar) Pass() {
-	revealStatus(bar, "PASSED", "GREEN")
+	bar.revealStatus("PASSED", "GREEN")
 }
 
 // Print a FAILED status
 func (bar *StatusBar) Fail() {
-	revealStatus(bar, "FAILED", "RED")
+	bar.revealStatus("FAILED", "RED")
 }
 
 // Print the status given
-func revealStatus(bar *StatusBar, status string, colorKey string) {
+func (bar *StatusBar) revealStatus(status string, colorKey string) {
 	bar.isSpinning = false
 
 	fmt.Printf("\r[ %s%s%s ] %s\n",
