@@ -2,7 +2,6 @@ package statusbar
 
 import (
 	"fmt"
-	"time"
 
 	"github.com/12yanogden/colors"
 	shutters "github.com/12yanogden/spinners/shutters"
@@ -28,7 +27,6 @@ func (bar *StatusBar) Start(msg string) {
 func spin(bar *StatusBar) {
 	for bar.isSpinning {
 		fmt.Printf("\r[ %s ] %s", bar.Spinner.Play(), bar.Msg)
-		time.Sleep(10 * time.Millisecond)
 	}
 }
 
